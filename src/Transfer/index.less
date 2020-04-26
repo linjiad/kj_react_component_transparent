@@ -1,0 +1,210 @@
+.my_transfer_main{
+  width: 100%;
+  display: flex;
+  height: 500px;
+  .my_transfer_left{
+    width: 30%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    .my_transfer_left_title{
+      height: 30px;
+      background-color: rgba(56, 73, 112, 0.5);
+    }
+    .my_transfer_left_main{
+      width: 90%;
+      position: relative;
+      left: 5%;
+      height: 450px;
+      overflow-y: auto;
+      ul{
+        display: flex;
+        flex-direction:column;
+        li{
+          margin: 0 0 0 0;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content:flex-start;
+          .my_transfer_left_name{
+            height: 20px;
+            line-height: 20px;
+            padding-left: 20px;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .my_transfer_mid{
+    width: 20%;
+    div{
+      height: 100%;
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      div{
+        width: 80%;
+        height: 20px;
+        border: solid 1px rgba(255, 255, 255, 0.8);
+        text-align: center;
+        position: relative;
+        cursor:pointer;
+        margin-top: 10px;
+        left: 10%;
+      }
+    }
+  }
+  .my_transfer_right{
+    width: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    .my_transfer_right_title{
+      height: 30px;
+      background-color: rgba(56, 73, 112, 0.5);
+    }
+    .my_transfer_right_main{
+      width: 90%;
+      position: relative;
+      left: 5%;
+      height: 450px;
+      overflow-y: auto;
+      ul{
+        display: flex;
+        flex-direction:column;
+        li{
+          margin: 0 0 0 0;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content:flex-start;
+          .my_transfer_right_name{
+            height: 20px;
+            line-height: 20px;
+            padding-left: 20px;
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          select{
+            height: 30px;
+          }
+        }
+      }
+      select{
+        font-size:14px;
+        color: #c2c2c2;
+        border-radius: 3px;
+        border:rgba(255,255,255,0.3) solid 2px;
+        box-shadow: inset 0 0 4px rgba(255,255,255,0.1),0 0 4px rgba(0,0,0,0.5);
+        padding:0 8px;
+        width: 180px;height: 31px;line-height: 26px;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        padding-right: 14px;
+        background: url(../static/imgs/Dropdown_06.png)  no-repeat scroll right center transparent;
+      }
+
+      select::-ms-expand {display: none;}
+      select:focus{
+        color: #ffffff;
+        -webkit-transition: color.5s;
+        border-color: rgba(102,175,233,.8);
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+      }
+      select:hover{
+        color: #ffffff;
+        -webkit-transition: color.5s;
+        border-color: #40a9ff;
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      }
+      .txtErr{
+        border: #cc211b solid 1px;
+      }
+      .txtErr:focus { outline: #cc211b; }
+      .tips{
+        color: red;
+        overflow: hidden;
+        line-height: 30px;
+        margin-left: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+  .my_transfer_search{
+    border-radius: 3px;
+    width: 100%;
+    padding: 0 8px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .my_transfer_search:hover{
+    border-color: #40a9ff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    -webkit-transition: color.5s;
+  }
+  .my_transfer_checkbox{
+    height: 20px;
+    transform: scale(1.2,1.2);
+    border-radius: 3px;
+    padding: 0 0px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 0px rgba(255, 255, 255, 0.1), 0 0 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0px rgba(255, 255, 255, 0.1), 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.ant-transfer {
+  color: rgba(255, 255,255, 0.8);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ant-transfer-list {
+  border:2px solid rgba(255,255,255,0.3)!important;
+  box-shadow: inset 0 0 4px rgba(255,255,255,0.1),0 0 4px rgba(0,0,0,0.5)!important;
+  border-radius: 4px!important;}
+.ant-transfer-list-header {
+  color: rgba(255, 255, 255, .9)!important;
+  background-color:rgba(56,73,112,0.5)!important;
+  border-bottom: 1px solid rgba(255,255,255,0.3)!important;
+  box-shadow: inset 0 0 4px rgba(255,255,255,0.1),0 0 4px rgba(0,0,0,0.5)!important;
+  border-radius: 4px 4px 0 0!important;
+}
+.ant-transfer-list-content-item:not(.ant-transfer-list-content-item-disabled):hover {
+  background-color: transparent!important;
+  cursor: pointer!important;
+}
+.ant-transfer-list-search{background-color: transparent!important;
+  border:1px solid rgba(255,255,255,0.3)!important;
+  color: rgba(255, 255, 255, 1)!important;
+}
+.ant-transfer-list-search-action .anticon {
+  color: rgba(255, 255, 255, 0.7)!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+}
+.ant-transfer-list-search-action .anticon:hover {
+  color: rgba(255, 255, 255, 0.9)!important;
+}
+.ant-empty-description{color: rgba(255, 255, 255, 0.9)!important;}
+.ant-transfer-list-content-item-text{
+  color: #ffffff;
+}

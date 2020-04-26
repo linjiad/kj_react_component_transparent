@@ -1,0 +1,55 @@
+.my_modal_main{
+  .modal_back{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index:4;
+    opacity:0.95;
+    background: url("../static/imgs/M-bg.gif") no-repeat top;
+    background-size:100% 100%;
+    filter:alpha(Opacity=95);-moz-opacity:0.95;opacity: 0.95;
+    /*  filter:blur(30px);*/
+  }
+  .moadl_main{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .moadl_title{
+      width: 100%;
+      height: 65px;
+      line-height: 65px;
+      border-bottom: #32a7dd 6px solid;
+      background-color:rgba(42,46,64,0.6);
+      display: flex;
+      justify-content:space-between;
+
+      .moadl_title_name{
+        color: white;
+        font-size: 1.6rem;
+        float: left;
+        margin-left:3%;
+      }
+      .moadl_title_close{
+        float:right;
+        margin-right:3%;
+        i{
+          font-size: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+    .moadl_content{
+      width: 100%;
+      height: 100%;
+      background-color:rgba(42,46,64,0.6);
+      margin-bottom: 2%;
+    }
+  }
+}

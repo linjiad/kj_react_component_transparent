@@ -1,0 +1,51 @@
+.new_left_menu_sub{
+  width: 100%;
+  overflow-y: hidden;
+  .new_left_menu_title_sub{
+    color: #9399b1;
+    font-size: 16px;
+    line-height: 40px;
+    cursor:pointer;
+  }
+  .new_left_menu_title_sub:hover{
+    color: #ffffff;
+    background-color: rgba(21,74,134,0.8)!important;
+  }
+}
+.showmenu1{
+  line-height:40px;
+  animation-name: showmenu;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.showmenu1 i{font-size: 19px;}
+.hiddenmenu1{
+  height: 0;
+  animation-name: hiddenmenu;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.showmenu2{
+  line-height:40px;
+  animation-name: showmenu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.showmenu2 i{font-size: 19px;}
+.hiddenmenu2{
+  height: 0;
+  animation-name: hiddenmenu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes showmenu
+{
+  from {height: 0}
+  to {height: 40px}
+}
+@keyframes hiddenmenu
+{
+  from {height: 40px}
+  to {height: 0}
+}

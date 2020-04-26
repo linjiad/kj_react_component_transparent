@@ -1,0 +1,52 @@
+.my_input_main{
+  color: #ffffff;
+  display: flex;
+  .my_input_title{
+    height: 30px;
+    line-height:30px;
+    min-width: 80px;
+    margin-right: 10px;
+    font-size: 14px
+  }
+  .my_input{
+    border-radius: 3px;
+    padding:0 8px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: inset 0 0 4px rgba(255,255,255,0.1),0 0 4px rgba(0,0,0,0.5);
+    height: 30px;line-height:30px;
+    font-size:14px;
+    color: #ffffff;
+  }
+  .my_input:focus{
+    border-color: rgba(102,175,233,.8);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+  }
+  .my_input::-webkit-input-placeholder {
+    color: #c2c2c2;
+    -webkit-transition: color.5s;
+  }
+  .my_input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder {
+    color: #fff;
+    -webkit-transition: color.5s;
+  }
+  .my_input:hover{
+    border-color: #40a9ff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    -webkit-transition: color.5s;
+  }
+  .my_input_txtErr{
+  }
+  .my_input_txtErr:focus { outline: #cc211b; }
+  .my_input_tips{
+    color: red;
+    overflow: hidden;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+}

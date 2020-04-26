@@ -1,0 +1,78 @@
+.my_popconfirm_main{
+  .my_popconfirm_tips{
+    position: absolute;
+    z-index: 999;
+    border: 1px solid #e3e4e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 1px rgba(0,0,0,.3);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 1px rgba(0,0,0,.3);
+    border-radius: 3px;
+    background-color:#ffffff;
+    padding: 5px 10px;
+    .my_popconfirm_head{
+      color: #7d7d7d;
+      font-size: 3px;
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      .my_popconfirm_title{
+        padding: 8px;
+        display: flex;
+      }
+      .my_popconfirm_buttons{
+        display: flex;
+        justify-content:space-around;
+        .my_popconfirm_yes{
+          background: #0066cc;
+          border-radius: 3px;
+          font-size:1.2rem;
+          color: white;
+          margin-bottom: 2px;
+          line-height:20px;
+          height:20px;
+          text-align: center;
+          padding: 0 10px;
+          cursor: pointer;
+        }
+        .my_popconfirm_no{
+          background:white;
+          border-radius:3px;
+          border: 1px solid #e3e4e6;
+          font-size: 1.2rem;
+          color: #7d7d7d;
+          line-height:20px;
+          height:20px;
+          text-align: center;
+          padding: 0 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .my_popconfirm_tips:before, .my_popconfirm_tips:after{
+    content:"";
+    border:6px solid rgba(0,0,0,.1);
+    width:0;
+    height:0;
+    position:absolute;
+  }
+  .my_popconfirm_tips:after{
+    content:"";
+    border:6px solid #ffffff;
+    width:0;
+    height:0;
+    position:absolute;
+  }
+  .my_popconfirm_tips:before, .my_popconfirm_tips:after{
+    border-left-color:transparent;
+    border-right-color:transparent;
+    left:calc(50% - 10px);
+  }
+  .my_popconfirm_tips:before{
+    border-bottom-color:transparent;
+    top:calc(100% + 1px);
+  }
+  .my_popconfirm_tips:after{
+    border-bottom-color:transparent;
+    top:calc(100% - 1px);
+  }
+}

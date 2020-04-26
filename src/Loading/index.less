@@ -1,0 +1,67 @@
+.my_loading_main{
+  .modal_loading_back{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index:5;
+    opacity:0.95;
+    background: url("../static/imgs/M-bg.gif") no-repeat top;
+    background-size:100% 100%;
+    filter:alpha(Opacity=95);-moz-opacity:0.95;opacity: 0.95;
+    /*  filter:blur(30px);*/
+  }
+}
+.loadingBox{
+  font-size:15px;
+  color:#ffffff;
+  width: 80%;
+  margin:25vh auto;
+  text-align: center;
+}
+
+.sk-double-bounce {
+  width: 5em;
+  height: 5em;
+  position: relative;
+  margin:2vh auto;
+}
+.sk-double-bounce .sk-child {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color:#233864;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-double-bounce 2.0s infinite ease-in-out;
+  animation: sk-double-bounce 2.0s infinite ease-in-out;
+}
+.sk-double-bounce .sk-double-bounce-2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-double-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes sk-double-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
